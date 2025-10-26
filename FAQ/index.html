@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>❓ Frequently Asked Questions - MERCUR-E GitHub Bot - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/solarized-dark.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../AI_INTEGRATION/" class="nav-link">🤖 AI Integration Guide - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../AZ%C6%8FRBAYCAN_README/" class="nav-link">🤖 MERCUR-E GitHub Bot - Azərbaycan dilində təlimat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../CONTRIBUTING/" class="nav-link">🤝 Contributing to MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DEPLOYMENT/" class="nav-link">🚀 Deployment Guide for MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">❓ Frequently Asked Questions - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../QUICKSTART/" class="nav-link">⚡ Quick Start Guide - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../TESTING/" class="nav-link">🧪 Testing Guide for MERCUR-E GitHub Bot</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../DEPLOYMENT/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../QUICKSTART/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#frequently-asked-questions-mercur-e-github-bot" class="nav-link">❓ Frequently Asked Questions - MERCUR-E GitHub Bot</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#general-questions" class="nav-link">General Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#setup-questions" class="nav-link">Setup Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#installation-questions" class="nav-link">Installation Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#configuration-questions" class="nav-link">Configuration Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#running-questions" class="nav-link">Running Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#command-questions" class="nav-link">Command Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#permissions-questions" class="nav-link">Permissions Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#security-questions" class="nav-link">Security Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ai-integration-questions" class="nav-link">AI Integration Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#deployment-questions" class="nav-link">Deployment Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#troubleshooting-questions" class="nav-link">Troubleshooting Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#performance-questions" class="nav-link">Performance Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#advanced-questions" class="nav-link">Advanced Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#support-questions" class="nav-link">Support Questions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="frequently-asked-questions-mercur-e-github-bot">❓ Frequently Asked Questions - MERCUR-E GitHub Bot</h1>
+<h2 id="general-questions">General Questions</h2>
+<h3 id="what-is-mercur-e-github-bot">What is MERCUR-E GitHub Bot?</h3>
+<p>MERCUR-E is a fully functional GitHub App that automates repository management through slash commands, GitHub Actions integration, and AI-powered insights.</p>
+<h3 id="what-can-it-do">What can it do?</h3>
+<ul>
+<li>Trigger GitHub Actions workflows with <code>/test</code></li>
+<li>Merge pull requests automatically with <code>/merge</code></li>
+<li>Generate comprehensive reports with <code>/report</code></li>
+<li>Integrate with AI assistants via FastMCP</li>
+<li>Validate webhooks securely</li>
+<li>Support PAM authentication for privileged operations</li>
+</ul>
+<h3 id="is-it-free">Is it free?</h3>
+<p>Yes, the bot is open source and free to use. You only need a GitHub account to create a GitHub App.</p>
+<h2 id="setup-questions">Setup Questions</h2>
+<h3 id="how-do-i-create-a-github-app">How do I create a GitHub App?</h3>
+<ol>
+<li>Go to GitHub Settings → Developer settings → GitHub Apps</li>
+<li>Click "New GitHub App"</li>
+<li>Fill in the required information</li>
+<li>Set permissions (see README.md)</li>
+<li>Subscribe to events (issue_comment, pull_request, push)</li>
+<li>Generate and download private key</li>
+</ol>
+<h3 id="where-do-i-get-the-app-id">Where do I get the App ID?</h3>
+<p>After creating your GitHub App:
+1. Go to the app's settings page
+2. The App ID is shown at the top of the page
+3. Copy it to your <code>.env</code> file</p>
+<h3 id="what-is-the-webhook-secret">What is the webhook secret?</h3>
+<p>The webhook secret is a password that GitHub uses to sign webhook payloads. You set this when creating your GitHub App. Use a strong, random string.</p>
+<p>Generate one:</p>
+<pre><code class="language-bash">openssl rand -hex 32
+</code></pre>
+<h3 id="where-is-the-private-key">Where is the private key?</h3>
+<p>When you create a GitHub App and click "Generate private key", GitHub downloads a <code>.pem</code> file. Save this as <code>private-key.pem</code> in your project directory.</p>
+<h2 id="installation-questions">Installation Questions</h2>
+<h3 id="what-python-version-do-i-need">What Python version do I need?</h3>
+<p>Python 3.8 or higher. Check your version:</p>
+<pre><code class="language-bash">python3 --version
+</code></pre>
+<h3 id="do-i-need-docker">Do I need Docker?</h3>
+<p>No, Docker is optional. You can run the bot with:
+- Python virtual environment (recommended for development)
+- Docker (recommended for production)
+- systemd service</p>
+<h3 id="can-i-run-this-on-windows">Can I run this on Windows?</h3>
+<p>Yes, but the setup scripts are written for Linux/Mac. On Windows:
+1. Create venv manually: <code>python -m venv venv</code>
+2. Activate: <code>venv\Scripts\activate</code>
+3. Install: <code>pip install -r requirements.txt</code>
+4. Run: <code>python main.py</code></p>
+<h3 id="installation-fails-with-dependency-errors">Installation fails with dependency errors</h3>
+<p>Update pip first:</p>
+<pre><code class="language-bash">./venv/bin/pip install --upgrade pip
+</code></pre>
+<p>Then retry:</p>
+<pre><code class="language-bash">./venv/bin/pip install -r requirements.txt
+</code></pre>
+<h2 id="configuration-questions">Configuration Questions</h2>
+<h3 id="what-environment-variables-are-required">What environment variables are required?</h3>
+<p>Minimum required:</p>
+<pre><code class="language-env">GITHUB_APP_ID=your_app_id
+GITHUB_WEBHOOK_SECRET=your_secret
+</code></pre>
+<p>The bot will use defaults for other settings.</p>
+<h3 id="can-i-use-a-different-port">Can I use a different port?</h3>
+<p>Yes, edit <code>.env</code>:</p>
+<pre><code class="language-env">PORT=9000
+</code></pre>
+<h3 id="how-do-i-enable-debug-logging">How do I enable debug logging?</h3>
+<p>Edit <code>.env</code>:</p>
+<pre><code class="language-env">DEBUG=True
+LOG_LEVEL=DEBUG
+</code></pre>
+<h2 id="running-questions">Running Questions</h2>
+<h3 id="how-do-i-test-locally">How do I test locally?</h3>
+<ol>
+<li>Start the bot: <code>./run_local.sh</code></li>
+<li>In another terminal, start ngrok: <code>ngrok http 8000</code></li>
+<li>Update GitHub App webhook URL with ngrok URL</li>
+<li>Test on a repository where the app is installed</li>
+</ol>
+<h3 id="what-is-ngrok">What is ngrok?</h3>
+<p>ngrok creates a secure tunnel to your localhost, allowing GitHub to send webhooks to your local development machine.</p>
+<p>Download: https://ngrok.com/download</p>
+<h3 id="can-i-use-something-other-than-ngrok">Can I use something other than ngrok?</h3>
+<p>Yes, alternatives:
+- Cloudflare Tunnel (free, no account needed)
+- localtunnel
+- serveo
+- Your own reverse proxy</p>
+<h3 id="the-bot-starts-but-doesnt-respond-to-commands">The bot starts but doesn't respond to commands</h3>
+<p>Check:
+1. Is the app installed on the repository?
+2. Is the webhook URL correct?
+3. Are webhooks being delivered? (Check GitHub App settings → Advanced → Recent Deliveries)
+4. Check logs: <code>tail -f logs/githubbot.log</code></p>
+<h2 id="command-questions">Command Questions</h2>
+<h3 id="what-commands-are-available">What commands are available?</h3>
+<ul>
+<li><code>/test [workflow]</code> - Trigger GitHub Actions workflow</li>
+<li><code>/merge [method]</code> - Merge PR (squash/merge/rebase)</li>
+<li><code>/report</code> - Generate status report</li>
+</ul>
+<h3 id="can-i-add-custom-commands">Can I add custom commands?</h3>
+<p>Yes! Edit <code>commands.py</code> to add new command handlers, then register them in <code>main.py</code>.</p>
+<h3 id="why-isnt-merge-working">Why isn't <code>/merge</code> working?</h3>
+<p>Check:
+1. Is it used on a pull request (not an issue)?
+2. Is the PR mergeable (no conflicts)?
+3. Does the bot have <code>pull_requests: write</code> permission?
+4. Are CI checks passing?</p>
+<h3 id="can-i-use-multiple-commands-in-one-comment">Can I use multiple commands in one comment?</h3>
+<p>Yes! Each command on its own line:</p>
+<pre><code>/test ci.yml
+/report
+</code></pre>
+<h2 id="permissions-questions">Permissions Questions</h2>
+<h3 id="what-permissions-does-the-bot-need">What permissions does the bot need?</h3>
+<p>Repository permissions:
+- Actions: Read &amp; write
+- Contents: Read &amp; write
+- Issues: Read &amp; write
+- Pull requests: Read &amp; write
+- Workflows: Read &amp; write</p>
+<h3 id="can-the-bot-delete-files">Can the bot delete files?</h3>
+<p>No, the bot is designed to only read and write files, not delete them. This is a safety feature.</p>
+<h3 id="can-i-restrict-who-can-use-commands">Can I restrict who can use commands?</h3>
+<p>Currently, anyone with write access to the repository can use commands. You can add custom authorization logic in <code>commands.py</code>.</p>
+<h2 id="security-questions">Security Questions</h2>
+<h3 id="is-the-webhook-signature-validated">Is the webhook signature validated?</h3>
+<p>Yes, all webhooks are validated using HMAC-SHA256 (or SHA1 for legacy).</p>
+<h3 id="how-is-authentication-handled">How is authentication handled?</h3>
+<p>The bot uses:
+1. GitHub App JWT for app-level authentication
+2. Installation tokens for repository access
+3. Optional PAM for privileged operations</p>
+<h3 id="should-i-use-https-in-production">Should I use HTTPS in production?</h3>
+<p>Absolutely! Use Let's Encrypt for free SSL certificates. See DEPLOYMENT.md for setup instructions.</p>
+<h3 id="what-is-pam-authentication">What is PAM authentication?</h3>
+<p>PAM (Pluggable Authentication Modules) provides an additional layer of authentication for privileged operations. It's optional and disabled by default.</p>
+<h2 id="ai-integration-questions">AI Integration Questions</h2>
+<h3 id="what-is-fastmcp">What is FastMCP?</h3>
+<p>FastMCP is a framework for exposing tools to AI assistants. It allows AI models to interact with your GitHub bot programmatically.</p>
+<h3 id="how-do-i-enable-ai-integration">How do I enable AI integration?</h3>
+<ol>
+<li>Start the MCP server: <code>./run_mcp.sh</code></li>
+<li>Configure your AI assistant to connect to <code>http://localhost:8001</code></li>
+</ol>
+<h3 id="which-ai-assistants-are-supported">Which AI assistants are supported?</h3>
+<p>Any AI assistant that supports the MCP protocol:
+- Claude Desktop
+- Custom GPT implementations
+- Any MCP-compatible client</p>
+<h3 id="can-ai-assistants-execute-commands-directly">Can AI assistants execute commands directly?</h3>
+<p>No, AI assistants can only:
+- Parse comments
+- Analyze PRs
+- Suggest commands
+- Generate reports</p>
+<p>Actual command execution requires a human to post the command in a GitHub comment.</p>
+<h2 id="deployment-questions">Deployment Questions</h2>
+<h3 id="how-do-i-deploy-to-production">How do I deploy to production?</h3>
+<p>See DEPLOYMENT.md for complete instructions. Quick summary:
+1. Set up a server with Docker
+2. Configure domain and DNS
+3. Obtain SSL certificate with Let's Encrypt
+4. Deploy with Docker Compose
+5. Update GitHub App webhook URL</p>
+<h3 id="what-are-the-server-requirements">What are the server requirements?</h3>
+<p>Minimum:
+- 1 CPU core
+- 512 MB RAM
+- 10 GB disk space
+- Ubuntu 20.04+ or similar Linux distribution</p>
+<h3 id="can-i-deploy-to-herokurailwayrender">Can I deploy to Heroku/Railway/Render?</h3>
+<p>Yes! The bot works on any platform that supports:
+- Python 3.8+
+- Persistent storage for logs
+- Inbound HTTPS connections</p>
+<h3 id="how-do-i-update-the-bot">How do I update the bot?</h3>
+<pre><code class="language-bash">cd /opt/mercur-e-bot
+git pull
+docker-compose down
+docker-compose build
+docker-compose up -d
+</code></pre>
+<h2 id="troubleshooting-questions">Troubleshooting Questions</h2>
+<h3 id="webhook-signature-validation-fails">Webhook signature validation fails</h3>
+<ol>
+<li>Check webhook secret matches in GitHub App and <code>.env</code></li>
+<li>Verify no extra spaces in secret</li>
+<li>Check GitHub is sending SHA-256 signature</li>
+<li>Review logs for exact error</li>
+</ol>
+<h3 id="installation-not-found-error">"Installation not found" error</h3>
+<ol>
+<li>Install the app on the repository</li>
+<li>Verify installation ID is correct</li>
+<li>Check app has required permissions</li>
+</ol>
+<h3 id="commands-execute-but-nothing-happens">Commands execute but nothing happens</h3>
+<ol>
+<li>Check bot has required permissions</li>
+<li>Verify GitHub Actions workflows exist</li>
+<li>Review logs for errors</li>
+<li>Check API rate limits</li>
+</ol>
+<h3 id="high-memory-usage">High memory usage</h3>
+<ol>
+<li>Check for memory leaks in custom code</li>
+<li>Limit concurrent webhook processing</li>
+<li>Add resource limits in Docker</li>
+<li>Monitor with <code>docker stats</code></li>
+</ol>
+<h3 id="logs-are-too-large">Logs are too large</h3>
+<p>Configure log rotation in <code>/etc/logrotate.d/mercur-e-bot</code>:</p>
+<pre><code>/opt/mercur-e-bot/logs/*.log {
+    daily
+    rotate 7
+    compress
+    delaycompress
+    notifempty
+}
+</code></pre>
+<h2 id="performance-questions">Performance Questions</h2>
+<h3 id="how-many-requests-can-it-handle">How many requests can it handle?</h3>
+<p>Depends on your server, but the bot can handle:
+- 100+ webhooks per minute
+- 1000+ API requests per hour (GitHub rate limit)</p>
+<h3 id="can-i-scale-horizontally">Can I scale horizontally?</h3>
+<p>Yes, but you'll need:
+- Load balancer
+- Shared storage for logs
+- Redis for token caching (not implemented by default)</p>
+<h3 id="how-do-i-monitor-performance">How do I monitor performance?</h3>
+<ol>
+<li>Check logs: <code>tail -f logs/githubbot.log</code></li>
+<li>Monitor Docker: <code>docker stats</code></li>
+<li>Use APM tools like Datadog, New Relic</li>
+<li>Set up health check monitoring</li>
+</ol>
+<h2 id="advanced-questions">Advanced Questions</h2>
+<h3 id="can-i-use-this-with-github-enterprise">Can I use this with GitHub Enterprise?</h3>
+<p>Yes, update the GitHub API base URL in <code>github_auth.py</code>:</p>
+<pre><code class="language-python">Github(token, base_url=&quot;https://github.enterprise.com/api/v3&quot;)
+</code></pre>
+<h3 id="can-i-integrate-with-other-services">Can I integrate with other services?</h3>
+<p>Yes! Add integrations in <code>commands.py</code> or create new modules. Examples:
+- Slack notifications
+- Jira integration
+- Custom CI/CD systems</p>
+<h3 id="can-i-use-a-database">Can I use a database?</h3>
+<p>Yes, add database support for:
+- Event history
+- User preferences
+- Command audit logs
+- Analytics</p>
+<h3 id="how-do-i-contribute">How do I contribute?</h3>
+<ol>
+<li>Fork the repository</li>
+<li>Create a feature branch</li>
+<li>Make your changes</li>
+<li>Add tests</li>
+<li>Submit a pull request</li>
+</ol>
+<h2 id="support-questions">Support Questions</h2>
+<h3 id="where-can-i-get-help">Where can I get help?</h3>
+<ol>
+<li>Check this FAQ</li>
+<li>Review README.md and other documentation</li>
+<li>Check logs for error messages</li>
+<li>Search GitHub issues</li>
+<li>Create a new issue with details</li>
+</ol>
+<h3 id="how-do-i-report-a-bug">How do I report a bug?</h3>
+<p>Create a GitHub issue with:
+- Description of the problem
+- Steps to reproduce
+- Expected vs actual behavior
+- Log excerpts (remove sensitive data)
+- Environment details (OS, Python version, etc.)</p>
+<h3 id="can-i-request-features">Can I request features?</h3>
+<p>Yes! Create a GitHub issue with:
+- Feature description
+- Use case
+- Expected behavior
+- Any relevant examples</p>
+<hr />
+<p>Still have questions? Check the documentation or create an issue!</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>🤝 Contributing to MERCUR-E GitHub Bot - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/solarized-dark.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../AI_INTEGRATION/" class="nav-link">🤖 AI Integration Guide - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../AZ%C6%8FRBAYCAN_README/" class="nav-link">🤖 MERCUR-E GitHub Bot - Azərbaycan dilində təlimat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">🤝 Contributing to MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DEPLOYMENT/" class="nav-link">🚀 Deployment Guide for MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../FAQ/" class="nav-link">❓ Frequently Asked Questions - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../QUICKSTART/" class="nav-link">⚡ Quick Start Guide - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../TESTING/" class="nav-link">🧪 Testing Guide for MERCUR-E GitHub Bot</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../AZ%C6%8FRBAYCAN_README/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../DEPLOYMENT/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#contributing-to-mercur-e-github-bot" class="nav-link">🤝 Contributing to MERCUR-E GitHub Bot</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#ways-to-contribute" class="nav-link">🎯 Ways to Contribute</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#getting-started" class="nav-link">🚀 Getting Started</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#development-workflow" class="nav-link">💻 Development Workflow</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#testing" class="nav-link">🧪 Testing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#commit-guidelines" class="nav-link">📝 Commit Guidelines</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#code-review-process" class="nav-link">🔍 Code Review Process</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#bug-reports" class="nav-link">🐛 Bug Reports</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#feature-requests" class="nav-link">💡 Feature Requests</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#documentation" class="nav-link">📚 Documentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#design-principles" class="nav-link">🎨 Design Principles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#security" class="nav-link">🔐 Security</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#license" class="nav-link">📜 License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#recognition" class="nav-link">🙏 Recognition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#questions" class="nav-link">❓ Questions?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="contributing-to-mercur-e-github-bot">🤝 Contributing to MERCUR-E GitHub Bot</h1>
+<p>Thank you for your interest in contributing! This document provides guidelines for contributing to the project.</p>
+<h2 id="ways-to-contribute">🎯 Ways to Contribute</h2>
+<ul>
+<li><strong>Report bugs</strong> - Create detailed issue reports</li>
+<li><strong>Suggest features</strong> - Propose new functionality</li>
+<li><strong>Improve documentation</strong> - Fix typos, add examples</li>
+<li><strong>Write code</strong> - Implement features or fix bugs</li>
+<li><strong>Review PRs</strong> - Help review pull requests</li>
+<li><strong>Share feedback</strong> - Tell us how you're using the bot</li>
+</ul>
+<h2 id="getting-started">🚀 Getting Started</h2>
+<h3 id="1-fork-and-clone">1. Fork and Clone</h3>
+<pre><code class="language-bash"># Fork the repository on GitHub
+# Then clone your fork
+git clone https://github.com/YOUR_USERNAME/mercur-e.git
+cd mercur-e
+</code></pre>
+<h3 id="2-set-up-development-environment">2. Set Up Development Environment</h3>
+<pre><code class="language-bash"># Run setup
+./setup.sh
+
+# Create .env file
+cp .env.example .env
+# Edit .env with your test GitHub App credentials
+</code></pre>
+<h3 id="3-create-a-branch">3. Create a Branch</h3>
+<pre><code class="language-bash">git checkout -b feature/your-feature-name
+# or
+git checkout -b fix/bug-description
+</code></pre>
+<h2 id="development-workflow">💻 Development Workflow</h2>
+<h3 id="running-locally">Running Locally</h3>
+<pre><code class="language-bash"># Start the bot
+./run_local.sh
+
+# In another terminal, start ngrok
+ngrok http 8000
+
+# Update your test GitHub App webhook URL
+</code></pre>
+<h3 id="code-style">Code Style</h3>
+<p>We follow PEP 8 with some modifications:</p>
+<pre><code class="language-bash"># Format code with black
+./venv/bin/black *.py
+
+# Check with flake8
+./venv/bin/flake8 *.py --max-line-length=100
+</code></pre>
+<h3 id="adding-a-new-command">Adding a New Command</h3>
+<ol>
+<li><strong>Add handler in <code>commands.py</code></strong>:</li>
+</ol>
+<pre><code class="language-python">async def handle_mycommand(self, pr, issue, args):
+    &quot;&quot;&quot;Handle /mycommand&quot;&quot;&quot;
+    try:
+        # Your logic here
+        return {
+            'success': True,
+            'message': '✅ Command executed successfully'
+        }
+    except Exception as e:
+        return {
+            'success': False,
+            'message': f'❌ Error: {str(e)}'
+        }
+</code></pre>
+<ol>
+<li><strong>Register in <code>main.py</code></strong>:</li>
+</ol>
+<pre><code class="language-python">elif command == 'mycommand':
+    result = await handler.handle_mycommand(pr, issue_obj, args)
+</code></pre>
+<ol>
+<li><strong>Update documentation</strong>:</li>
+<li>Add to README.md command list</li>
+<li>Add examples to TESTING.md</li>
+</ol>
+<h3 id="adding-mcp-tools">Adding MCP Tools</h3>
+<ol>
+<li><strong>Add tool in <code>mcp_server.py</code></strong>:</li>
+</ol>
+<pre><code class="language-python">@mcp.tool()
+async def my_tool(param: str) -&gt; Dict[str, Any]:
+    &quot;&quot;&quot;
+    Tool description
+
+    Args:
+        param: Parameter description
+
+    Returns:
+        Result dictionary
+    &quot;&quot;&quot;
+    return {&quot;success&quot;: True, &quot;data&quot;: &quot;result&quot;}
+</code></pre>
+<ol>
+<li><strong>Document in AI_INTEGRATION.md</strong></li>
+</ol>
+<h2 id="testing">🧪 Testing</h2>
+<h3 id="manual-testing">Manual Testing</h3>
+<pre><code class="language-bash"># Test health endpoint
+curl http://localhost:8000/health
+
+# Test command parsing
+curl -X POST http://localhost:8000/api/parse-comment \
+  -H &quot;Content-Type: application/json&quot; \
+  -d '{&quot;comment&quot;: &quot;/test&quot;}'
+</code></pre>
+<h3 id="integration-testing">Integration Testing</h3>
+<ol>
+<li>Create a test repository</li>
+<li>Install your test GitHub App</li>
+<li>Test commands on PRs and issues</li>
+<li>Verify webhook deliveries in GitHub App settings</li>
+</ol>
+<h3 id="writing-tests-future">Writing Tests (Future)</h3>
+<pre><code class="language-python"># tests/test_commands.py
+import pytest
+from commands import CommandParser
+
+def test_parse_command():
+    commands = CommandParser.parse_commands(&quot;/test ci.yml&quot;)
+    assert len(commands) == 1
+    assert commands[0]['command'] == 'test'
+</code></pre>
+<h2 id="commit-guidelines">📝 Commit Guidelines</h2>
+<h3 id="commit-message-format">Commit Message Format</h3>
+<pre><code>type(scope): subject
+
+body (optional)
+
+footer (optional)
+</code></pre>
+<p><strong>Types:</strong>
+- <code>feat</code>: New feature
+- <code>fix</code>: Bug fix
+- <code>docs</code>: Documentation changes
+- <code>style</code>: Code style changes (formatting)
+- <code>refactor</code>: Code refactoring
+- <code>test</code>: Adding tests
+- <code>chore</code>: Maintenance tasks</p>
+<p><strong>Examples:</strong></p>
+<pre><code>feat(commands): add /deploy command for automated deployments
+
+Implements a new /deploy command that triggers deployment workflows
+and posts status updates.
+
+Closes #123
+</code></pre>
+<pre><code>fix(webhook): handle missing installation_id gracefully
+
+Previously, webhooks without installation_id would crash the bot.
+Now we log a warning and continue processing.
+</code></pre>
+<h2 id="code-review-process">🔍 Code Review Process</h2>
+<h3 id="before-submitting-pr">Before Submitting PR</h3>
+<ul>
+<li>[ ] Code follows style guidelines</li>
+<li>[ ] All tests pass (if applicable)</li>
+<li>[ ] Documentation updated</li>
+<li>[ ] Commit messages are clear</li>
+<li>[ ] No sensitive data in commits</li>
+</ul>
+<h3 id="pr-description-template">PR Description Template</h3>
+<pre><code class="language-markdown">## Description
+Brief description of changes
+
+## Type of Change
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Documentation update
+- [ ] Refactoring
+
+## Testing
+How to test these changes
+
+## Checklist
+- [ ] Code follows style guidelines
+- [ ] Documentation updated
+- [ ] Tests added/updated
+- [ ] No breaking changes
+</code></pre>
+<h3 id="review-process">Review Process</h3>
+<ol>
+<li>Automated checks run (if configured)</li>
+<li>Maintainer reviews code</li>
+<li>Feedback provided</li>
+<li>Changes requested or approved</li>
+<li>Merged to main branch</li>
+</ol>
+<h2 id="bug-reports">🐛 Bug Reports</h2>
+<h3 id="good-bug-report-includes">Good Bug Report Includes</h3>
+<ul>
+<li><strong>Description</strong>: Clear description of the bug</li>
+<li><strong>Steps to Reproduce</strong>: Detailed steps</li>
+<li><strong>Expected Behavior</strong>: What should happen</li>
+<li><strong>Actual Behavior</strong>: What actually happens</li>
+<li><strong>Environment</strong>: OS, Python version, etc.</li>
+<li><strong>Logs</strong>: Relevant log excerpts (remove sensitive data)</li>
+</ul>
+<h3 id="bug-report-template">Bug Report Template</h3>
+<pre><code class="language-markdown">**Description**
+A clear description of the bug.
+
+**Steps to Reproduce**
+1. Go to '...'
+2. Click on '...'
+3. See error
+
+**Expected Behavior**
+What you expected to happen.
+
+**Actual Behavior**
+What actually happened.
+
+**Environment**
+- OS: Ubuntu 22.04
+- Python: 3.11
+- Bot Version: 1.0.0
+
+**Logs**
+</code></pre>
+<p>Paste relevant logs here</p>
+<pre><code>
+**Additional Context**
+Any other information.
+</code></pre>
+<h2 id="feature-requests">💡 Feature Requests</h2>
+<h3 id="good-feature-request-includes">Good Feature Request Includes</h3>
+<ul>
+<li><strong>Use Case</strong>: Why is this needed?</li>
+<li><strong>Proposed Solution</strong>: How should it work?</li>
+<li><strong>Alternatives</strong>: Other approaches considered</li>
+<li><strong>Examples</strong>: Similar features elsewhere</li>
+</ul>
+<h3 id="feature-request-template">Feature Request Template</h3>
+<pre><code class="language-markdown">**Use Case**
+Describe the problem this feature would solve.
+
+**Proposed Solution**
+How should this feature work?
+
+**Alternatives**
+Other solutions you've considered.
+
+**Additional Context**
+Examples, mockups, etc.
+</code></pre>
+<h2 id="documentation">📚 Documentation</h2>
+<h3 id="documentation-standards">Documentation Standards</h3>
+<ul>
+<li>Use clear, concise language</li>
+<li>Include code examples</li>
+<li>Add screenshots where helpful</li>
+<li>Keep it up-to-date</li>
+<li>Test all examples</li>
+</ul>
+<h3 id="documentation-files">Documentation Files</h3>
+<ul>
+<li><code>README.md</code> - Main documentation</li>
+<li><code>QUICKSTART.md</code> - Quick setup guide</li>
+<li><code>DEPLOYMENT.md</code> - Production deployment</li>
+<li><code>TESTING.md</code> - Testing guide</li>
+<li><code>AI_INTEGRATION.md</code> - AI integration</li>
+<li><code>FAQ.md</code> - Common questions</li>
+</ul>
+<h2 id="design-principles">🎨 Design Principles</h2>
+<h3 id="code-principles">Code Principles</h3>
+<ol>
+<li><strong>Simplicity</strong> - Keep it simple and readable</li>
+<li><strong>Security</strong> - Security first, always</li>
+<li><strong>Reliability</strong> - Handle errors gracefully</li>
+<li><strong>Performance</strong> - Optimize where it matters</li>
+<li><strong>Maintainability</strong> - Write code others can understand</li>
+</ol>
+<h3 id="api-design">API Design</h3>
+<ul>
+<li>Use clear, descriptive names</li>
+<li>Return consistent response formats</li>
+<li>Include proper error messages</li>
+<li>Document all endpoints</li>
+</ul>
+<h3 id="error-handling">Error Handling</h3>
+<pre><code class="language-python"># Good
+try:
+    result = risky_operation()
+    return {'success': True, 'data': result}
+except SpecificError as e:
+    logger.error(f&quot;Operation failed: {e}&quot;)
+    return {'success': False, 'message': str(e)}
+
+# Bad
+try:
+    result = risky_operation()
+except:
+    pass  # Silent failure
+</code></pre>
+<h2 id="security">🔐 Security</h2>
+<h3 id="security-guidelines">Security Guidelines</h3>
+<ul>
+<li>Never commit secrets or keys</li>
+<li>Validate all inputs</li>
+<li>Use parameterized queries</li>
+<li>Keep dependencies updated</li>
+<li>Follow OWASP guidelines</li>
+</ul>
+<h3 id="reporting-security-issues">Reporting Security Issues</h3>
+<p><strong>DO NOT</strong> create public issues for security vulnerabilities.</p>
+<p>Instead, email: security@yourdomain.com</p>
+<p>Include:
+- Description of vulnerability
+- Steps to reproduce
+- Potential impact
+- Suggested fix (if any)</p>
+<h2 id="license">📜 License</h2>
+<p>By contributing, you agree that your contributions will be licensed under the MIT License.</p>
+<h2 id="recognition">🙏 Recognition</h2>
+<p>Contributors will be recognized in:
+- README.md contributors section
+- Release notes
+- Project documentation</p>
+<h2 id="questions">❓ Questions?</h2>
+<ul>
+<li>Check the FAQ.md</li>
+<li>Review existing issues</li>
+<li>Ask in discussions</li>
+<li>Contact maintainers</li>
+</ul>
+<hr />
+<p>Thank you for contributing to MERCUR-E GitHub Bot! 🚀</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

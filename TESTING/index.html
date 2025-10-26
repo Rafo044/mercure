@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>🧪 Testing Guide for MERCUR-E GitHub Bot - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/solarized-dark.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../AI_INTEGRATION/" class="nav-link">🤖 AI Integration Guide - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../AZ%C6%8FRBAYCAN_README/" class="nav-link">🤖 MERCUR-E GitHub Bot - Azərbaycan dilində təlimat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../CONTRIBUTING/" class="nav-link">🤝 Contributing to MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DEPLOYMENT/" class="nav-link">🚀 Deployment Guide for MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../FAQ/" class="nav-link">❓ Frequently Asked Questions - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../QUICKSTART/" class="nav-link">⚡ Quick Start Guide - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">🧪 Testing Guide for MERCUR-E GitHub Bot</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../QUICKSTART/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#testing-guide-for-mercur-e-github-bot" class="nav-link">🧪 Testing Guide for MERCUR-E GitHub Bot</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#local-testing-with-ngrok" class="nav-link">Local Testing with ngrok</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#testing-with-cloudflare-tunnel-alternative-to-ngrok" class="nav-link">Testing with Cloudflare Tunnel (Alternative to ngrok)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#manual-api-testing" class="nav-link">Manual API Testing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#testing-webhook-signature-validation" class="nav-link">Testing Webhook Signature Validation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#testing-fastmcp-integration" class="nav-link">Testing FastMCP Integration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#integration-testing" class="nav-link">Integration Testing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#debugging" class="nav-link">Debugging</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#performance-testing" class="nav-link">Performance Testing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#security-testing" class="nav-link">Security Testing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#automated-testing-future" class="nav-link">Automated Testing (Future)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#monitoring-in-production" class="nav-link">Monitoring in Production</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="testing-guide-for-mercur-e-github-bot">🧪 Testing Guide for MERCUR-E GitHub Bot</h1>
+<h2 id="local-testing-with-ngrok">Local Testing with ngrok</h2>
+<h3 id="1-install-ngrok">1. Install ngrok</h3>
+<pre><code class="language-bash"># Download from https://ngrok.com/download
+# Or use snap:
+sudo snap install ngrok
+</code></pre>
+<h3 id="2-start-the-bot">2. Start the Bot</h3>
+<pre><code class="language-bash"># Terminal 1: Start the bot
+./run_local.sh
+</code></pre>
+<h3 id="3-expose-with-ngrok">3. Expose with ngrok</h3>
+<pre><code class="language-bash"># Terminal 2: Start ngrok
+ngrok http 8000
+</code></pre>
+<p>You'll see output like:</p>
+<pre><code>Forwarding  https://abc123.ngrok.io -&gt; http://localhost:8000
+</code></pre>
+<h3 id="4-update-github-app-webhook">4. Update GitHub App Webhook</h3>
+<ol>
+<li>Go to your GitHub App settings</li>
+<li>Update Webhook URL to: <code>https://abc123.ngrok.io/webhook</code></li>
+<li>Save changes</li>
+</ol>
+<h3 id="5-test-commands">5. Test Commands</h3>
+<p>Create a test repository and install your GitHub App on it.</p>
+<h4 id="test-test-command">Test /test Command</h4>
+<ol>
+<li>Create a pull request or issue</li>
+<li>Add a comment: <code>/test</code></li>
+<li>Check ngrok terminal for incoming webhook</li>
+<li>Check bot logs for processing</li>
+</ol>
+<h4 id="test-merge-command">Test /merge Command</h4>
+<ol>
+<li>Create a pull request</li>
+<li>Ensure CI passes (if you have workflows)</li>
+<li>Add comment: <code>/merge squash</code></li>
+<li>PR should be merged</li>
+</ol>
+<h4 id="test-report-command">Test /report Command</h4>
+<ol>
+<li>On any PR or issue</li>
+<li>Add comment: <code>/report</code></li>
+<li>Bot should post a detailed report</li>
+</ol>
+<h2 id="testing-with-cloudflare-tunnel-alternative-to-ngrok">Testing with Cloudflare Tunnel (Alternative to ngrok)</h2>
+<h3 id="1-install-cloudflare-tunnel">1. Install Cloudflare Tunnel</h3>
+<pre><code class="language-bash"># Download cloudflared
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+sudo dpkg -i cloudflared-linux-amd64.deb
+</code></pre>
+<h3 id="2-authenticate">2. Authenticate</h3>
+<pre><code class="language-bash">cloudflared tunnel login
+</code></pre>
+<h3 id="3-create-tunnel">3. Create Tunnel</h3>
+<pre><code class="language-bash">cloudflared tunnel create mercur-e-bot
+</code></pre>
+<h3 id="4-configure-tunnel">4. Configure Tunnel</h3>
+<p>Create <code>~/.cloudflared/config.yml</code>:</p>
+<pre><code class="language-yaml">tunnel: mercur-e-bot
+credentials-file: /home/user/.cloudflared/&lt;tunnel-id&gt;.json
+
+ingress:
+  - hostname: bot.yourdomain.com
+    service: http://localhost:8000
+  - service: http_status:404
+</code></pre>
+<h3 id="5-run-tunnel">5. Run Tunnel</h3>
+<pre><code class="language-bash">cloudflared tunnel run mercur-e-bot
+</code></pre>
+<h2 id="manual-api-testing">Manual API Testing</h2>
+<h3 id="health-check">Health Check</h3>
+<pre><code class="language-bash">curl http://localhost:8000/health
+</code></pre>
+<p>Expected response:</p>
+<pre><code class="language-json">{
+  &quot;status&quot;: &quot;healthy&quot;,
+  &quot;github_app_id&quot;: 123456,
+  &quot;fastmcp_enabled&quot;: true,
+  &quot;pam_enabled&quot;: false
+}
+</code></pre>
+<h3 id="parse-comment-api">Parse Comment API</h3>
+<pre><code class="language-bash">curl -X POST http://localhost:8000/api/parse-comment \
+  -H &quot;Content-Type: application/json&quot; \
+  -d '{
+    &quot;comment&quot;: &quot;/test ci.yml\n/merge squash\n/report&quot;
+  }'
+</code></pre>
+<p>Expected response:</p>
+<pre><code class="language-json">{
+  &quot;success&quot;: true,
+  &quot;commands&quot;: [
+    {&quot;command&quot;: &quot;test&quot;, &quot;args&quot;: &quot;ci.yml&quot;},
+    {&quot;command&quot;: &quot;merge&quot;, &quot;args&quot;: &quot;squash&quot;},
+    {&quot;command&quot;: &quot;report&quot;, &quot;args&quot;: &quot;&quot;}
+  ],
+  &quot;count&quot;: 3
+}
+</code></pre>
+<h3 id="status-api">Status API</h3>
+<pre><code class="language-bash">curl http://localhost:8000/api/status
+</code></pre>
+<h2 id="testing-webhook-signature-validation">Testing Webhook Signature Validation</h2>
+<h3 id="generate-test-signature">Generate Test Signature</h3>
+<pre><code class="language-python">import hmac
+import hashlib
+
+payload = b'{&quot;action&quot;: &quot;created&quot;}'
+secret = b'your_webhook_secret'
+
+signature = 'sha256=' + hmac.new(secret, payload, hashlib.sha256).hexdigest()
+print(signature)
+</code></pre>
+<h3 id="send-test-webhook">Send Test Webhook</h3>
+<pre><code class="language-bash">curl -X POST http://localhost:8000/webhook \
+  -H &quot;Content-Type: application/json&quot; \
+  -H &quot;X-GitHub-Event: ping&quot; \
+  -H &quot;X-Hub-Signature-256: sha256=&lt;calculated_signature&gt;&quot; \
+  -d '{&quot;action&quot;: &quot;created&quot;}'
+</code></pre>
+<h2 id="testing-fastmcp-integration">Testing FastMCP Integration</h2>
+<h3 id="1-start-mcp-server">1. Start MCP Server</h3>
+<pre><code class="language-bash"># Terminal 3
+./run_mcp.sh
+</code></pre>
+<h3 id="2-test-mcp-tools">2. Test MCP Tools</h3>
+<pre><code class="language-bash"># Install MCP client (if needed)
+pip install mcp
+
+# Test parse command
+curl -X POST http://localhost:8001/tools/parse_github_comment \
+  -H &quot;Content-Type: application/json&quot; \
+  -d '{
+    &quot;comment_text&quot;: &quot;/test workflow.yml&quot;
+  }'
+</code></pre>
+<h3 id="3-test-with-ai-assistant">3. Test with AI Assistant</h3>
+<p>Configure your AI assistant to use MCP server at <code>http://localhost:8001</code></p>
+<p>Example prompts:
+- "Parse this GitHub comment: /test ci.yml"
+- "Analyze pull request #123 in owner/repo"
+- "Suggest a command for merging a PR with passing CI"</p>
+<h2 id="integration-testing">Integration Testing</h2>
+<h3 id="test-full-workflow">Test Full Workflow</h3>
+<ol>
+<li><strong>Create Test Repository</strong></li>
+<li>Create a new repository</li>
+<li>Install your GitHub App</li>
+<li>
+<p>Add a simple workflow file</p>
+</li>
+<li>
+<p><strong>Create Pull Request</strong>
+   <code>bash
+   git checkout -b test-branch
+   echo "test" &gt; test.txt
+   git add test.txt
+   git commit -m "Test commit"
+   git push origin test-branch</code></p>
+</li>
+<li>
+<p><strong>Test Commands</strong></p>
+</li>
+<li>Comment <code>/test</code> - should trigger workflow</li>
+<li>Comment <code>/report</code> - should post status</li>
+<li>
+<p>Comment <code>/merge squash</code> - should merge PR</p>
+</li>
+<li>
+<p><strong>Verify Results</strong></p>
+</li>
+<li>Check GitHub Actions for triggered workflow</li>
+<li>Check PR comments for bot responses</li>
+<li>Check PR merge status</li>
+</ol>
+<h2 id="debugging">Debugging</h2>
+<h3 id="enable-debug-logging">Enable Debug Logging</h3>
+<p>Edit <code>.env</code>:</p>
+<pre><code class="language-env">DEBUG=True
+LOG_LEVEL=DEBUG
+</code></pre>
+<p>Restart the bot.</p>
+<h3 id="view-detailed-logs">View Detailed Logs</h3>
+<pre><code class="language-bash"># Real-time logs
+tail -f logs/githubbot.log
+
+# Search for errors
+grep ERROR logs/githubbot.log
+
+# Search for specific event
+grep &quot;issue_comment&quot; logs/githubbot.log
+</code></pre>
+<h3 id="check-github-webhook-deliveries">Check GitHub Webhook Deliveries</h3>
+<ol>
+<li>Go to GitHub App settings</li>
+<li>Click "Advanced" → "Recent Deliveries"</li>
+<li>View request/response for each webhook</li>
+<li>Redeliver failed webhooks</li>
+</ol>
+<h3 id="common-issues">Common Issues</h3>
+<h4 id="webhook-signature-validation-fails">Webhook signature validation fails</h4>
+<ul>
+<li>Check <code>GITHUB_WEBHOOK_SECRET</code> matches GitHub App settings</li>
+<li>Verify webhook is using SHA-256 signature</li>
+<li>Check for trailing whitespace in secret</li>
+</ul>
+<h4 id="commands-not-executing">Commands not executing</h4>
+<ul>
+<li>Verify bot has correct permissions</li>
+<li>Check installation on repository</li>
+<li>Review command syntax (must start with <code>/</code>)</li>
+</ul>
+<h4 id="authentication-errors">Authentication errors</h4>
+<ul>
+<li>Verify <code>GITHUB_APP_ID</code> is correct</li>
+<li>Check <code>private-key.pem</code> is valid</li>
+<li>Ensure app is installed on repository</li>
+</ul>
+<h2 id="performance-testing">Performance Testing</h2>
+<h3 id="load-testing-with-apache-bench">Load Testing with Apache Bench</h3>
+<pre><code class="language-bash"># Install Apache Bench
+sudo apt install apache2-utils
+
+# Test health endpoint
+ab -n 1000 -c 10 http://localhost:8000/health
+
+# Results show requests/second, latency, etc.
+</code></pre>
+<h3 id="stress-testing">Stress Testing</h3>
+<pre><code class="language-bash"># Install wrk
+sudo apt install wrk
+
+# Run stress test
+wrk -t12 -c400 -d30s http://localhost:8000/health
+</code></pre>
+<h2 id="security-testing">Security Testing</h2>
+<h3 id="test-webhook-signature-bypass">Test Webhook Signature Bypass</h3>
+<p>Try sending webhook without signature:</p>
+<pre><code class="language-bash">curl -X POST http://localhost:8000/webhook \
+  -H &quot;Content-Type: application/json&quot; \
+  -H &quot;X-GitHub-Event: ping&quot; \
+  -d '{&quot;action&quot;: &quot;created&quot;}'
+</code></pre>
+<p>Should return 401 Unauthorized.</p>
+<h3 id="test-invalid-signature">Test Invalid Signature</h3>
+<pre><code class="language-bash">curl -X POST http://localhost:8000/webhook \
+  -H &quot;Content-Type: application/json&quot; \
+  -H &quot;X-GitHub-Event: ping&quot; \
+  -H &quot;X-Hub-Signature-256: sha256=invalid&quot; \
+  -d '{&quot;action&quot;: &quot;created&quot;}'
+</code></pre>
+<p>Should return 401 Unauthorized.</p>
+<h3 id="test-https-redirect">Test HTTPS Redirect</h3>
+<pre><code class="language-bash"># Should redirect to HTTPS
+curl -I http://bot.yourdomain.com
+</code></pre>
+<h2 id="automated-testing-future">Automated Testing (Future)</h2>
+<h3 id="unit-tests">Unit Tests</h3>
+<p>Create <code>tests/test_commands.py</code>:</p>
+<pre><code class="language-python">import pytest
+from commands import CommandParser
+
+def test_parse_single_command():
+    text = &quot;/test ci.yml&quot;
+    commands = CommandParser.parse_commands(text)
+    assert len(commands) == 1
+    assert commands[0]['command'] == 'test'
+    assert commands[0]['args'] == 'ci.yml'
+
+def test_parse_multiple_commands():
+    text = &quot;/test\n/merge squash\n/report&quot;
+    commands = CommandParser.parse_commands(text)
+    assert len(commands) == 3
+</code></pre>
+<p>Run tests:</p>
+<pre><code class="language-bash">pytest tests/ -v
+</code></pre>
+<h2 id="monitoring-in-production">Monitoring in Production</h2>
+<h3 id="set-up-health-check-monitoring">Set Up Health Check Monitoring</h3>
+<p>Use services like:
+- UptimeRobot
+- Pingdom
+- StatusCake</p>
+<p>Monitor: <code>https://bot.yourdomain.com/health</code></p>
+<h3 id="log-monitoring">Log Monitoring</h3>
+<p>Use tools like:
+- Grafana + Loki
+- ELK Stack
+- Datadog</p>
+<h3 id="metrics">Metrics</h3>
+<p>Track:
+- Webhook processing time
+- Command execution success rate
+- API response times
+- Error rates</p>
+<hr />
+<p>Happy Testing! 🧪</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
