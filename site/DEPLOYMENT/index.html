@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>🚀 Deployment Guide for MERCUR-E GitHub Bot - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/solarized-dark.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../AI_INTEGRATION/" class="nav-link">🤖 AI Integration Guide - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../AZ%C6%8FRBAYCAN_README/" class="nav-link">🤖 MERCUR-E GitHub Bot - Azərbaycan dilində təlimat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../CONTRIBUTING/" class="nav-link">🤝 Contributing to MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">🚀 Deployment Guide for MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../FAQ/" class="nav-link">❓ Frequently Asked Questions - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../QUICKSTART/" class="nav-link">⚡ Quick Start Guide - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../TESTING/" class="nav-link">🧪 Testing Guide for MERCUR-E GitHub Bot</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../CONTRIBUTING/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../FAQ/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#deployment-guide-for-mercur-e-github-bot" class="nav-link">🚀 Deployment Guide for MERCUR-E GitHub Bot</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#prerequisites" class="nav-link">📋 Prerequisites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#server-setup" class="nav-link">🖥️ Server Setup</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#domain-configuration" class="nav-link">🌐 Domain Configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#application-deployment" class="nav-link">📦 Application Deployment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ssltls-setup" class="nav-link">🔒 SSL/TLS Setup</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#docker-deployment" class="nav-link">🐳 Docker Deployment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#nginx-configuration-standalone" class="nav-link">🔧 Nginx Configuration (Standalone)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#github-app-configuration" class="nav-link">🔄 GitHub App Configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#verification" class="nav-link">✅ Verification</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#monitoring" class="nav-link">📊 Monitoring</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#updates-and-maintenance" class="nav-link">🔄 Updates and Maintenance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#troubleshooting" class="nav-link">🐛 Troubleshooting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#performance-optimization" class="nav-link">📈 Performance Optimization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#production-checklist" class="nav-link">🎯 Production Checklist</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="deployment-guide-for-mercur-e-github-bot">🚀 Deployment Guide for MERCUR-E GitHub Bot</h1>
+<p>Complete guide for deploying the GitHub bot to production with TLS/HTTPS.</p>
+<h2 id="prerequisites">📋 Prerequisites</h2>
+<ul>
+<li>Ubuntu/Debian server (or similar Linux distribution)</li>
+<li>Domain name pointing to your server</li>
+<li>Root or sudo access</li>
+<li>Docker and Docker Compose installed</li>
+</ul>
+<h2 id="server-setup">🖥️ Server Setup</h2>
+<h3 id="1-update-system">1. Update System</h3>
+<pre><code class="language-bash">sudo apt update
+sudo apt upgrade -y
+</code></pre>
+<h3 id="2-install-docker">2. Install Docker</h3>
+<pre><code class="language-bash"># Install Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+# Add user to docker group
+sudo usermod -aG docker $USER
+
+# Install Docker Compose
+sudo apt install docker-compose -y
+
+# Verify installation
+docker --version
+docker-compose --version
+</code></pre>
+<h3 id="3-install-nginx-if-not-using-docker-compose-nginx">3. Install Nginx (if not using Docker Compose nginx)</h3>
+<pre><code class="language-bash">sudo apt install nginx -y
+sudo systemctl enable nginx
+sudo systemctl start nginx
+</code></pre>
+<h3 id="4-install-certbot-for-lets-encrypt">4. Install Certbot for Let's Encrypt</h3>
+<pre><code class="language-bash">sudo apt install certbot python3-certbot-nginx -y
+</code></pre>
+<h2 id="domain-configuration">🌐 Domain Configuration</h2>
+<h3 id="1-dns-setup">1. DNS Setup</h3>
+<p>Add an A record for your subdomain:</p>
+<pre><code>Type: A
+Name: bot (or your preferred subdomain)
+Value: YOUR_SERVER_IP
+TTL: 3600
+</code></pre>
+<p>Wait for DNS propagation (can take up to 48 hours, usually much faster):</p>
+<pre><code class="language-bash"># Check DNS propagation
+nslookup bot.yourdomain.com
+</code></pre>
+<h3 id="2-firewall-configuration">2. Firewall Configuration</h3>
+<pre><code class="language-bash"># Allow HTTP and HTTPS
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 22/tcp  # SSH
+
+# Enable firewall
+sudo ufw enable
+sudo ufw status
+</code></pre>
+<h2 id="application-deployment">📦 Application Deployment</h2>
+<h3 id="1-cloneupload-project">1. Clone/Upload Project</h3>
+<pre><code class="language-bash"># Create application directory
+sudo mkdir -p /opt/mercur-e
+sudo chown $USER:$USER /opt/mercur-e
+
+# Upload your project files to /opt/mercur-e
+# Or clone from git:
+cd /opt/mercur-e
+git clone &lt;your-repo-url&gt; .
+</code></pre>
+<h3 id="2-configure-environment">2. Configure Environment</h3>
+<pre><code class="language-bash">cd /opt/mercur-e
+
+# Copy environment template
+cp .env.example .env
+
+# Edit configuration
+nano .env
+</code></pre>
+<p>Update with your production values:</p>
+<pre><code class="language-env"># GitHub App Configuration
+GITHUB_APP_ID=123456
+GITHUB_APP_PRIVATE_KEY_PATH=./private-key.pem
+GITHUB_WEBHOOK_SECRET=your_secure_webhook_secret
+
+# Server Configuration
+HOST=0.0.0.0
+PORT=8000
+DEBUG=False
+
+# PAM Authentication
+PAM_SERVICE=login
+PAM_ENABLED=False
+
+# AI Integration
+FASTMCP_ENABLED=True
+FASTMCP_PORT=8001
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=./logs/githubbot.log
+
+# Security
+ALLOWED_ORIGINS=https://bot.yourdomain.com
+</code></pre>
+<h3 id="3-add-github-app-private-key">3. Add GitHub App Private Key</h3>
+<pre><code class="language-bash"># Upload your private-key.pem file
+nano private-key.pem
+# Paste your private key content
+
+# Set proper permissions
+chmod 600 private-key.pem
+</code></pre>
+<h3 id="4-update-nginx-configuration">4. Update Nginx Configuration</h3>
+<pre><code class="language-bash"># Edit nginx.conf
+nano nginx.conf
+</code></pre>
+<p>Replace all instances of <code>your-domain.com</code> with your actual domain (e.g., <code>bot.yourdomain.com</code>).</p>
+<h2 id="ssltls-setup">🔒 SSL/TLS Setup</h2>
+<h3 id="method-1-using-certbot-recommended">Method 1: Using Certbot (Recommended)</h3>
+<pre><code class="language-bash"># Obtain SSL certificate
+sudo certbot --nginx -d bot.yourdomain.com
+
+# Follow the prompts:
+# - Enter email address
+# - Agree to terms
+# - Choose whether to redirect HTTP to HTTPS (recommended: yes)
+</code></pre>
+<p>Certbot will automatically:
+- Obtain certificate from Let's Encrypt
+- Configure Nginx
+- Set up auto-renewal</p>
+<h3 id="method-2-manual-certificate">Method 2: Manual Certificate</h3>
+<p>If using Docker Compose with included nginx:</p>
+<pre><code class="language-bash"># Obtain certificate only (without nginx auto-config)
+sudo certbot certonly --standalone -d bot.yourdomain.com
+
+# Certificates will be saved to:
+# /etc/letsencrypt/live/bot.yourdomain.com/fullchain.pem
+# /etc/letsencrypt/live/bot.yourdomain.com/privkey.pem
+</code></pre>
+<p>Update <code>docker-compose.yml</code> to mount certificates:</p>
+<pre><code class="language-yaml">volumes:
+  - /etc/letsencrypt:/etc/letsencrypt:ro
+</code></pre>
+<h3 id="3-test-auto-renewal">3. Test Auto-Renewal</h3>
+<pre><code class="language-bash"># Dry run renewal
+sudo certbot renew --dry-run
+
+# If successful, certbot will auto-renew before expiration
+</code></pre>
+<h2 id="docker-deployment">🐳 Docker Deployment</h2>
+<h3 id="option-1-docker-compose-recommended">Option 1: Docker Compose (Recommended)</h3>
+<pre><code class="language-bash">cd /opt/mercur-e
+
+# Build and start services
+docker-compose up -d
+
+# Check status
+docker-compose ps
+
+# View logs
+docker-compose logs -f
+
+# Stop services
+docker-compose down
+</code></pre>
+<h3 id="option-2-docker-only">Option 2: Docker Only</h3>
+<pre><code class="language-bash"># Build image
+docker build -t mercur-e .
+
+# Run container
+docker run -d \
+  --name mercur-e \
+  --restart unless-stopped \
+  -p 8000:8000 \
+  -p 8001:8001 \
+  -v $(pwd)/logs:/app/logs \
+  -v $(pwd)/private-key.pem:/app/private-key.pem:ro \
+  --env-file .env \
+  mercur-e
+
+# Check logs
+docker logs -f mercur-e
+</code></pre>
+<h2 id="nginx-configuration-standalone">🔧 Nginx Configuration (Standalone)</h2>
+<p>If not using Docker Compose nginx:</p>
+<pre><code class="language-bash"># Create nginx site configuration
+sudo nano /etc/nginx/sites-available/mercur-e
+</code></pre>
+<p>Add configuration:</p>
+<pre><code class="language-nginx">upstream githubbot {
+    server localhost:8000;
+}
+
+server {
+    listen 80;
+    server_name bot.yourdomain.com;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl http2;
+    server_name bot.yourdomain.com;
+
+    ssl_certificate /etc/letsencrypt/live/bot.yourdomain.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/bot.yourdomain.com/privkey.pem;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers on;
+
+    add_header Strict-Transport-Security &quot;max-age=31536000&quot; always;
+
+    location /webhook {
+        proxy_pass http://githubbot;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location / {
+        proxy_pass http://githubbot;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+</code></pre>
+<p>Enable site:</p>
+<pre><code class="language-bash"># Create symbolic link
+sudo ln -s /etc/nginx/sites-available/mercur-e /etc/nginx/sites-enabled/
+
+# Test configuration
+sudo nginx -t
+
+# Reload nginx
+sudo systemctl reload nginx
+</code></pre>
+<h2 id="github-app-configuration">🔄 GitHub App Configuration</h2>
+<h3 id="1-update-webhook-url">1. Update Webhook URL</h3>
+<p>Go to your GitHub App settings:</p>
+<pre><code>https://github.com/settings/apps/MERCUR-E
+</code></pre>
+<p>Update webhook URL:</p>
+<pre><code>https://bot.yourdomain.com/webhook
+</code></pre>
+<h3 id="2-verify-webhook-secret">2. Verify Webhook Secret</h3>
+<p>Ensure the webhook secret in GitHub matches your <code>.env</code> file.</p>
+<h3 id="3-test-webhook">3. Test Webhook</h3>
+<p>GitHub provides a "Recent Deliveries" section where you can:
+- View webhook payloads
+- Redeliver webhooks
+- Check response status</p>
+<h2 id="verification">✅ Verification</h2>
+<h3 id="1-health-check">1. Health Check</h3>
+<pre><code class="language-bash"># Local
+curl http://localhost:8000/health
+
+# Public
+curl https://bot.yourdomain.com/health
+</code></pre>
+<p>Expected response:</p>
+<pre><code class="language-json">{
+  &quot;status&quot;: &quot;healthy&quot;,
+  &quot;github_app_id&quot;: 123456,
+  &quot;fastmcp_enabled&quot;: true,
+  &quot;pam_enabled&quot;: false
+}
+</code></pre>
+<h3 id="2-test-webhook">2. Test Webhook</h3>
+<p>Create a test issue or PR comment with <code>/test</code> in a repository where the app is installed.</p>
+<p>Check logs:</p>
+<pre><code class="language-bash"># Docker Compose
+docker-compose logs -f githubbot
+
+# Docker
+docker logs -f mercur-e
+
+# Local logs
+tail -f /opt/mercur-e/logs/githubbot.log
+</code></pre>
+<h3 id="3-ssl-check">3. SSL Check</h3>
+<pre><code class="language-bash"># Check SSL certificate
+openssl s_client -connect bot.yourdomain.com:443 -servername bot.yourdomain.com
+
+# Or use online tools:
+# https://www.ssllabs.com/ssltest/
+</code></pre>
+<h2 id="monitoring">📊 Monitoring</h2>
+<h3 id="1-set-up-log-rotation">1. Set Up Log Rotation</h3>
+<pre><code class="language-bash">sudo nano /etc/logrotate.d/mercur-e
+</code></pre>
+<p>Add:</p>
+<pre><code>/opt/mercur-e/logs/*.log {
+    daily
+    rotate 14
+    compress
+    delaycompress
+    notifempty
+    create 0640 www-data www-data
+    sharedscripts
+}
+</code></pre>
+<h3 id="2-monitor-with-systemd-alternative-to-docker">2. Monitor with systemd (Alternative to Docker)</h3>
+<p>Create systemd service:</p>
+<pre><code class="language-bash">sudo nano /etc/systemd/system/mercur-e.service
+</code></pre>
+<pre><code class="language-ini">[Unit]
+Description=MERCUR-E GitHub Bot
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/mercur-e
+Environment=&quot;PATH=/opt/mercur-e/venv/bin&quot;
+ExecStart=/opt/mercur-e/venv/bin/python main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p>Enable and start:</p>
+<pre><code class="language-bash">sudo systemctl daemon-reload
+sudo systemctl enable mercur-e
+sudo systemctl start mercur-e
+sudo systemctl status mercur-e
+</code></pre>
+<h2 id="updates-and-maintenance">🔄 Updates and Maintenance</h2>
+<h3 id="update-application">Update Application</h3>
+<pre><code class="language-bash">cd /opt/mercur-e
+
+# Pull latest changes
+git pull
+
+# Rebuild and restart
+docker-compose down
+docker-compose build
+docker-compose up -d
+</code></pre>
+<h3 id="backup">Backup</h3>
+<pre><code class="language-bash"># Backup configuration and keys
+tar -czf mercur-e-backup-$(date +%Y%m%d).tar.gz \
+  .env \
+  private-key.pem \
+  logs/
+
+# Store backup securely
+</code></pre>
+<h3 id="certificate-renewal">Certificate Renewal</h3>
+<p>Certbot auto-renews, but you can manually renew:</p>
+<pre><code class="language-bash">sudo certbot renew
+sudo systemctl reload nginx
+</code></pre>
+<h2 id="troubleshooting">🐛 Troubleshooting</h2>
+<h3 id="webhook-not-working">Webhook not working</h3>
+<ol>
+<li>Check firewall allows port 443</li>
+<li>Verify DNS points to correct IP</li>
+<li>Check nginx is running: <code>sudo systemctl status nginx</code></li>
+<li>Review nginx logs: <code>sudo tail -f /var/log/nginx/error.log</code></li>
+<li>Check application logs: <code>docker-compose logs -f</code></li>
+</ol>
+<h3 id="ssl-certificate-issues">SSL certificate issues</h3>
+<pre><code class="language-bash"># Check certificate validity
+sudo certbot certificates
+
+# Renew if needed
+sudo certbot renew --force-renewal
+</code></pre>
+<h3 id="application-crashes">Application crashes</h3>
+<pre><code class="language-bash"># Check logs
+docker-compose logs --tail=100 githubbot
+
+# Restart services
+docker-compose restart
+
+# Check resource usage
+docker stats
+</code></pre>
+<h2 id="performance-optimization">📈 Performance Optimization</h2>
+<h3 id="1-enable-http2">1. Enable HTTP/2</h3>
+<p>Already enabled in nginx configuration.</p>
+<h3 id="2-add-caching-headers">2. Add Caching Headers</h3>
+<p>Update nginx configuration to add caching for static assets.</p>
+<h3 id="3-rate-limiting">3. Rate Limiting</h3>
+<p>Already configured in <code>nginx.conf</code> for webhook endpoint.</p>
+<h3 id="4-resource-limits">4. Resource Limits</h3>
+<p>Update <code>docker-compose.yml</code>:</p>
+<pre><code class="language-yaml">services:
+  githubbot:
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+</code></pre>
+<h2 id="production-checklist">🎯 Production Checklist</h2>
+<ul>
+<li>[ ] Domain DNS configured</li>
+<li>[ ] SSL certificate obtained and valid</li>
+<li>[ ] <code>.env</code> file configured with production values</li>
+<li>[ ] <code>private-key.pem</code> uploaded and secured (chmod 600)</li>
+<li>[ ] Firewall configured (ports 80, 443, 22)</li>
+<li>[ ] Nginx configured and running</li>
+<li>[ ] Docker containers running</li>
+<li>[ ] GitHub App webhook URL updated</li>
+<li>[ ] Webhook deliveries successful</li>
+<li>[ ] Health check endpoint responding</li>
+<li>[ ] Logs being written correctly</li>
+<li>[ ] Log rotation configured</li>
+<li>[ ] Backup strategy in place</li>
+<li>[ ] Monitoring set up</li>
+</ul>
+<hr />
+<p>Your MERCUR-E GitHub Bot should now be running securely in production! 🎉</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

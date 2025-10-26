@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/solarized-dark.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AI_INTEGRATION/" class="nav-link">🤖 AI Integration Guide - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AZ%C6%8FRBAYCAN_README/" class="nav-link">🤖 MERCUR-E GitHub Bot - Azərbaycan dilində təlimat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="CONTRIBUTING/" class="nav-link">🤝 Contributing to MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="DEPLOYMENT/" class="nav-link">🚀 Deployment Guide for MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FAQ/" class="nav-link">❓ Frequently Asked Questions - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="QUICKSTART/" class="nav-link">⚡ Quick Start Guide - MERCUR-E GitHub Bot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="TESTING/" class="nav-link">🧪 Testing Guide for MERCUR-E GitHub Bot</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="AI_INTEGRATION/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#features" class="nav-link">✨ Features</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#quick-start" class="nav-link">🚀 Quick Start</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#tech-stack" class="nav-link">🛠️ Tech Stack</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#documentation" class="nav-link">📖 Documentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#usage-examples" class="nav-link">💡 Usage Examples</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#docker-deployment" class="nav-link">🐳 Docker Deployment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#configuration" class="nav-link">🔧 Configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#testing" class="nav-link">🧪 Testing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#contributing" class="nav-link">🤝 Contributing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#project-structure" class="nav-link">📊 Project Structure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#license" class="nav-link">📜 License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#acknowledgments" class="nav-link">🙏 Acknowledgments</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#support" class="nav-link">📞 Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<div align="center">
+
+# 🤖 MERCUR-E
+
+### AI-Powered GitHub Bot for Intelligent Repository Automation
+
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+<img src="./assets/banner.svg" alt="MERCUR-E Banner" width="800"/>
+
+**Automate your GitHub workflow with slash commands, AI insights, and intelligent PR management**
+
+[Features](#-features) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Contributing](#-contributing)
+
+</div>
+
+<hr />
+<h2 id="features">✨ Features</h2>
+<table>
+<tr>
+<td width="50%">
+
+### 🎯 **Core Capabilities**
+
+- **Slash Commands** - Control your repo with simple comments
+  - `/test` - Trigger GitHub Actions workflows
+  - `/merge` - Smart PR merging with validation
+  - `/report` - Comprehensive status reports
+
+- **Event Handling** - Responds to:
+  - 💬 Issue comments
+  - 🔀 Pull requests
+  - 📤 Push events
+
+</td>
+<td width="50%">
+
+### 🤖 **AI Integration**
+
+- **FastMCP Server** - AI assistant ready
+- **Intelligent Analysis** - PR insights & suggestions
+- **Natural Language** - Command parsing
+- **Automated Reports** - AI-generated summaries
+
+### 🔒 **Security First**
+
+- ✅ Webhook signature validation
+- ✅ JWT authentication
+- ✅ TLS/HTTPS support
+- ✅ PAM authentication (optional)
+
+</td>
+</tr>
+</table>
+
+<hr />
+<h2 id="quick-start">🚀 Quick Start</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>🐍 Python 3.11+</li>
+<li>🔑 GitHub App (<a href="https://github.com/settings/apps">Create one</a>)</li>
+<li>🔐 Private key from your GitHub App</li>
+</ul>
+<h3 id="installation">Installation</h3>
+<pre><code class="language-bash"># Clone the repository
+git clone https://github.com/Rafo044/mercur-e.git
+cd mercur-e
+
+# Run setup
+chmod +x scripts/setup.sh
+./scripts/setup.sh
+
+# Configure
+cp .env.example .env
+nano .env  # Add your GitHub App credentials
+
+# Add private key
+cp ~/Downloads/your-app.pem ./private-key.pem
+chmod 600 private-key.pem
+
+# Start the bot
+./scripts/run_local.sh
+</code></pre>
+<h3 id="test-locally-with-ngrok">Test Locally with ngrok</h3>
+<pre><code class="language-bash"># In another terminal
+ngrok http 8000
+
+# Update your GitHub App webhook URL with the ngrok HTTPS URL
+</code></pre>
+<hr />
+<h2 id="tech-stack">🛠️ Tech Stack</h2>
+<div align="center">
+
+| Category | Technologies |
+|----------|-------------|
+| **Backend** | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Uvicorn](https://img.shields.io/badge/Uvicorn-499848?style=flat-square&logo=gunicorn&logoColor=white) |
+| **GitHub** | ![PyGithub](https://img.shields.io/badge/PyGithub-181717?style=flat-square&logo=github&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white) |
+| **AI** | ![FastMCP](https://img.shields.io/badge/FastMCP-FF6B6B?style=flat-square&logo=ai&logoColor=white) ![Claude](https://img.shields.io/badge/Claude-8B5CF6?style=flat-square&logo=anthropic&logoColor=white) |
+| **Security** | ![Cryptography](https://img.shields.io/badge/Cryptography-3C873A?style=flat-square&logo=letsencrypt&logoColor=white) ![PAM](https://img.shields.io/badge/PAM-FCC624?style=flat-square&logo=linux&logoColor=black) |
+| **Deployment** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white) ![Let's Encrypt](https://img.shields.io/badge/Let's%20Encrypt-003A70?style=flat-square&logo=letsencrypt&logoColor=white) |
+| **Testing** | ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white) ![Coverage](https://img.shields.io/badge/Coverage-3C873A?style=flat-square&logo=codecov&logoColor=white) |
+
+</div>
+
+<hr />
+<h2 id="documentation">📖 Documentation</h2>
+<table>
+<thead>
+<tr>
+<th>Document</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📘 <a href="docs/QUICKSTART.md">Quick Start</a></td>
+<td>Get started in 5 minutes</td>
+</tr>
+<tr>
+<td>🚀 <a href="docs/DEPLOYMENT.md">Deployment Guide</a></td>
+<td>Production deployment with TLS</td>
+</tr>
+<tr>
+<td>🧪 <a href="docs/TESTING.md">Testing Guide</a></td>
+<td>Testing strategies and examples</td>
+</tr>
+<tr>
+<td>🤖 <a href="docs/AI_INTEGRATION.md">AI Integration</a></td>
+<td>FastMCP and AI assistant setup</td>
+</tr>
+<tr>
+<td>❓ <a href="docs/FAQ.md">FAQ</a></td>
+<td>Frequently asked questions</td>
+</tr>
+<tr>
+<td>🤝 <a href="docs/CONTRIBUTING.md">Contributing</a></td>
+<td>How to contribute</td>
+</tr>
+<tr>
+<td>🇦🇿 <a href="docs/AZƏRBAYCAN_README.md">Azərbaycan</a></td>
+<td>Azərbaycan dilində təlimat</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="usage-examples">💡 Usage Examples</h2>
+<h3 id="trigger-ci-workflow">Trigger CI Workflow</h3>
+<pre><code class="language-bash"># On any PR or issue, comment:
+/test
+
+# Or specify a workflow:
+/test ci.yml
+</code></pre>
+<h3 id="merge-pull-request">Merge Pull Request</h3>
+<pre><code class="language-bash"># Merge with squash (default):
+/merge
+
+# Or specify merge method:
+/merge squash
+/merge merge
+/merge rebase
+</code></pre>
+<h3 id="generate-status-report">Generate Status Report</h3>
+<pre><code class="language-bash"># Get comprehensive PR/issue report:
+/report
+</code></pre>
+<hr />
+<h2 id="docker-deployment">🐳 Docker Deployment</h2>
+<pre><code class="language-bash"># Build and run with Docker Compose
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop
+docker-compose down
+</code></pre>
+<hr />
+<h2 id="configuration">🔧 Configuration</h2>
+<h3 id="required-environment-variables">Required Environment Variables</h3>
+<pre><code class="language-env">GITHUB_APP_ID=your_app_id
+GITHUB_WEBHOOK_SECRET=your_webhook_secret
+GITHUB_APP_PRIVATE_KEY_PATH=./private-key.pem
+</code></pre>
+<h3 id="optional-settings">Optional Settings</h3>
+<pre><code class="language-env">PORT=8000
+DEBUG=False
+LOG_LEVEL=INFO
+FASTMCP_ENABLED=True
+PAM_ENABLED=False
+</code></pre>
+<hr />
+<h2 id="testing">🧪 Testing</h2>
+<pre><code class="language-bash"># Install dev dependencies
+pip install -e &quot;.[dev]&quot;
+
+# Run tests
+pytest
+
+# Run with coverage
+pytest --cov=mercur_e --cov-report=html
+
+# View coverage report
+open htmlcov/index.html
+</code></pre>
+<hr />
+<h2 id="contributing">🤝 Contributing</h2>
+<p>We welcome contributions! Please see our <a href="docs/CONTRIBUTING.md">Contributing Guide</a> for details.</p>
+<ol>
+<li>Fork the repository</li>
+<li>Create your feature branch (<code>git checkout -b feature/amazing-feature</code>)</li>
+<li>Commit your changes (<code>git commit -m 'Add amazing feature'</code>)</li>
+<li>Push to the branch (<code>git push origin feature/amazing-feature</code>)</li>
+<li>Open a Pull Request</li>
+</ol>
+<hr />
+<h2 id="project-structure">📊 Project Structure</h2>
+<pre><code>mercur-e/
+├── src/mercur_e/          # Main application code
+│   ├── main.py            # FastAPI application
+│   ├── config.py          # Configuration
+│   ├── github_auth.py     # GitHub authentication
+│   ├── security.py        # Security utilities
+│   ├── commands.py        # Command handlers
+│   └── mcp_server.py      # AI integration
+├── tests/                 # Test suite
+├── docs/                  # Documentation
+├── scripts/               # Utility scripts
+├── examples/              # Example configurations
+├── .github/               # GitHub workflows
+└── pyproject.toml         # Project metadata
+</code></pre>
+<hr />
+<h2 id="license">📜 License</h2>
+<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+<hr />
+<h2 id="acknowledgments">🙏 Acknowledgments</h2>
+<p>Built with:</p>
+<ul>
+<li>🚀 <a href="https://fastapi.tiangolo.com/">FastAPI</a> - Modern Python web framework</li>
+<li>🐙 <a href="https://github.com/PyGithub/PyGithub">PyGithub</a> - GitHub API wrapper</li>
+<li>🤖 <a href="https://github.com/jlowin/fastmcp">FastMCP</a> - AI integration framework</li>
+<li>🐳 <a href="https://www.docker.com/">Docker</a> - Containerization</li>
+<li>🔒 <a href="https://letsencrypt.org/">Let's Encrypt</a> - Free SSL certificates</li>
+</ul>
+<hr />
+<h2 id="support">📞 Support</h2>
+<ul>
+<li>📖 Check the <a href="docs/">documentation</a></li>
+<li>🐛 <a href="https://github.com/Rafo044/mercur-e/issues">Report bugs</a></li>
+<li>💬 <a href="https://github.com/Rafo044/mercur-e/discussions">Discussions</a></li>
+<li>⭐ Star this repo if you find it useful!</li>
+</ul>
+<hr />
+<div align="center">
+
+**Made with ❤️ by [Claude Sonnet](https://www.anthropic.com/claude)**
+
+[![GitHub stars](https://img.shields.io/github/stars/Rafo044/mercur-e?style=social)](https://github.com/Rafo044/mercur-e/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Rafo044/mercur-e?style=social)](https://github.com/Rafo044/mercur-e/network/members)
+
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-10-26 18:40:15.880726+00:00
+-->
