@@ -1,0 +1,54 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#grad1)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="50" cy="50" r="30" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="750" cy="150" r="40" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="700" cy="50" r="20" fill="rgba(255,255,255,0.15)"/>
+  
+  <!-- Robot Icon -->
+  <g transform="translate(80, 60)">
+    <rect x="0" y="20" width="60" height="60" rx="10" fill="#fff" opacity="0.9"/>
+    <circle cx="20" cy="40" r="8" fill="#667eea"/>
+    <circle cx="40" cy="40" r="8" fill="#667eea"/>
+    <rect x="15" y="55" width="30" height="5" rx="2" fill="#667eea"/>
+    <rect x="-10" y="35" width="15" height="5" rx="2" fill="#fff" opacity="0.9"/>
+    <rect x="55" y="35" width="15" height="5" rx="2" fill="#fff" opacity="0.9"/>
+    <circle cx="30" cy="10" r="5" fill="#fff" opacity="0.9"/>
+  </g>
+  
+  <!-- Main Title -->
+  <text x="180" y="90" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff">
+    MERCUR-E
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="180" y="120" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" opacity="0.9">
+    AI-Powered GitHub Automation Bot
+  </text>
+  
+  <!-- Features -->
+  <g transform="translate(180, 140)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" opacity="0.8">
+      ⚡ Slash Commands  •  🤖 AI Integration  •  🔒 Secure  •  🚀 Fast
+    </text>
+  </g>
+  
+  <!-- GitHub Icon -->
+  <g transform="translate(720, 30)">
+    <circle cx="0" cy="0" r="25" fill="#fff" opacity="0.2"/>
+    <path d="M0-15c-8.284 0-15 6.716-15 15 0 6.627 4.547 12.216 10.781 13.84.788.145 1.078-.342 1.078-.76 0-.375-.014-1.367-.022-2.683-4.176.907-5.057-2.013-5.057-2.013-.717-1.822-1.751-2.307-1.751-2.307-1.431-.978.108-.958.108-.958 1.583.112 2.416 1.626 2.416 1.626 1.406 2.409 3.688 1.713 4.588 1.31.143-1.019.55-1.713 1.001-2.107-3.499-.398-7.177-1.75-7.177-7.788 0-1.72.614-3.125 1.623-4.227-.163-.399-.703-2.002.154-4.175 0 0 1.323-.424 4.333 1.615 1.257-.35 2.605-.525 3.945-.531 1.338.006 2.686.181 3.945.531 3.007-2.039 4.328-1.615 4.328-1.615.859 2.173.319 3.776.156 4.175 1.011 1.102 1.621 2.507 1.621 4.227 0 6.052-3.684 7.386-7.192 7.777.565.487 1.069 1.448 1.069 2.919 0 2.107-.019 3.807-.019 4.323 0 .421.285.911 1.084.757C10.453 12.216 15 6.627 15 0c0-8.284-6.716-15-15-15z" fill="#fff" opacity="0.9"/>
+  </g>
+</svg>

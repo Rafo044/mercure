@@ -1,0 +1,30 @@
+[Unit]
+Description=MERCUR-E GitHub Bot
+After=network.target
+Documentation=https://github.com/yourusername/mercur-e
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/mercur-e
+Environment="PATH=/opt/mercur-e/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ExecStart=/opt/mercur-e/venv/bin/python /opt/mercur-e/main.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/opt/mercur-e/logs/stdout.log
+StandardError=append:/opt/mercur-e/logs/stderr.log
+
+# Security
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/mercur-e/logs
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=4096
+
+[Install]
+WantedBy=multi-user.target
