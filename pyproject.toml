@@ -42,7 +42,7 @@ classifiers = [
 
 dependencies = [
     "fastapi==0.109.0",
-    "uvicorn[standard]==0.27.0",
+    "uvicorn[standard]==0.38.0",
     "python-multipart==0.0.6",
     "PyGithub==2.1.1",
     "PyJWT==2.8.0",
