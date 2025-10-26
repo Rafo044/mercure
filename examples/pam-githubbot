@@ -1,0 +1,26 @@
+# PAM configuration for MERCUR-E GitHub Bot
+# Place this file in /etc/pam.d/githubbot
+#
+# This provides authentication for privileged bot operations
+# Adjust according to your security requirements
+
+# Authentication
+auth       required     pam_unix.so nullok
+auth       required     pam_env.so
+
+# Account management
+account    required     pam_unix.so
+account    required     pam_permit.so
+
+# Password management (if needed)
+password   required     pam_unix.so nullok obscure min=4 max=8 md5
+
+# Session management
+session    required     pam_unix.so
+session    required     pam_limits.so
+
+# Optional: Add two-factor authentication
+# auth       required     pam_google_authenticator.so
+
+# Optional: Restrict to specific users/groups
+# auth       required     pam_listfile.so onerr=fail item=user sense=allow file=/etc/githubbot.users
