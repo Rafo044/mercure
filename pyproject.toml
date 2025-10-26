@@ -53,7 +53,7 @@ dependencies = [
     "pamela==1.1.0",
     "python-dotenv==1.0.0",
     "pydantic==2.10.5",
-    "pydantic-settings==2.6.1",
+    "pydantic-settings==2.11.0",
     "loguru==0.7.2",
     "python-jose[cryptography]==3.3.0",
     "aiofiles==23.2.1",
