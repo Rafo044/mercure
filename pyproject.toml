@@ -52,7 +52,7 @@ dependencies = [
     "fastmcp==0.1.0",
     "pamela==1.1.0",
     "python-dotenv==1.0.0",
-    "pydantic==2.10.5",
+    "pydantic==2.12.3",
     "pydantic-settings==2.6.1",
     "loguru==0.7.2",
     "python-jose[cryptography]==3.3.0",
